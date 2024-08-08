@@ -45,3 +45,37 @@ const myFunction = function(){
 // function of return type objectfunction hota hai 
 
 console.log(typeof myFunction)
+
+
+
+
+//****************MEMORIES ***************//
+
+// Stack memory is used where Primitive datatypes are use 
+// Heap memory is used where where non- primitive datatypes are used
+
+// Jab bhi stack memory use hoti hai tab, jo bhi variable aapne declare kara hai uski ek copy milti hai 
+// jab bhi Heap memory use hoti hai tab, humko milta hai refrence toh jo bhi change hoga wo directly original value me hoga 
+
+
+let myYtname="Abhay"
+let anothername = myYtname
+// anothername= "alpha"
+
+console.log(myYtname)
+console.log(anothername)
+
+
+let userOne ={
+
+    email: "alpha@gmail.com" ,
+    upiId: "123@ibl"
+
+}
+
+let userTwo = userOne 
+
+userTwo.email="Gogo@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
