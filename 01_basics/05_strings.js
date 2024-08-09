@@ -1,4 +1,4 @@
-const gameName = new String('AbhayP')
+const gameName = new String('Abhay P')
 
 console.log(gameName.length) //length of the string 
 console.log(gameName.toUpperCase()) // converts string to uppercase
@@ -21,4 +21,12 @@ const newString = gameName.substring(0,4) // ab ye ek substring create kar dega 
  console.log(newStringOne.trim())
 
 
- 
+ const url = "https//abhay.com/abhay%20pandit"  // browser jo hai wo spaces ko nahi samjhta hai isliye abhay pandit ke beech me jo space hai udhar usne aapne hisab se %20 add kar diya
+
+ // to remove %20 ya puri url ko hi change karna hai toh we use 
+
+ url.replace('%20' , '-' ) // %20 ko replace kar diya dash(-) kar diya 
+
+ url.includes('Abhay') // is function se hum ye pata laga sakte hai ki url me Abhay hai ki nahi 
+
+ console.log(gameName.split(' '))  // split is a function which can be used to convert your string into an array or break it on basis of something , say (- dash) or ( space ) split does that for you.
